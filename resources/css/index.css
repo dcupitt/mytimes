@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+header a:link, a:visited {
+    color: black;
+    text-decoration: underline;
+    cursor: auto;
+}
+
+div.logo {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: MediumAquamarine;
+  width: 200px;
+}
+
+nav {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+h1 {
+  color: SeaGreen;
+}
