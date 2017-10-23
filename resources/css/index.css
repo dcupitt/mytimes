@@ -7,6 +7,7 @@ header {
   border-bottom: 1px solid black;
   height: 80px;
   width: 100%;
+  border: 1px solid black;
 }
 
 .logo {
@@ -36,7 +37,73 @@ nav span {
 }
 
 header a:link, a:visited {
-    color: black;
-    text-decoration: underline;
-    cursor: auto;
+  color: black;
+  text-decoration: underline;
+  cursor: auto;
+}
+
+.body {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  border: 1px solid black;
+}
+
+.column.large {
+  width: 630px;
+  border: 1px solid black;
+}
+
+.column.medium {
+  width: 300px;
+  border: 1px solid black;
+}
+
+.column.small {
+  width: 240px;
+  border: 1px solid black;
+}
+
+.image {
+  display: flex;
+}
+
+#tuna {
+  background-image: url("../../resources/images/img-story-main.png");
+}
+
+#earth {
+  background-image: url("../../resources/images/img-story-2.png");
+}
+
+#camera {
+  background-image: url("../../resources/images/img-story-3.png");
+}
+
+#earth,
+#camera {
+  text-align: center;
+}
+/* Fonts */
+
+h2,
+h3,
+p,
+img,
+.story {
+  border: 1px solid black;
+}
+
+p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.image h2 {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  height: 300px;
 }
