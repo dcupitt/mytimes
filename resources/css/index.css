@@ -66,24 +66,22 @@ header a:link, a:visited {
 
 .image {
   display: flex;
+  justify-content: center;
 }
 
-#tuna {
+.tuna {
   background-image: url("../../resources/images/img-story-main.png");
+  text-align: left;
 }
 
-#earth {
+.earth {
   background-image: url("../../resources/images/img-story-2.png");
 }
 
-#camera {
+.camera {
   background-image: url("../../resources/images/img-story-3.png");
 }
 
-#earth,
-#camera {
-  text-align: center;
-}
 /* Fonts */
 
 h2,
