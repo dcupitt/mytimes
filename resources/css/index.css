@@ -1,3 +1,5 @@
+/* header */
+
 header {
   display: flex;
   align-items: center;
@@ -7,7 +9,6 @@ header {
   border-bottom: 1px solid black;
   height: 80px;
   width: 100%;
-  border: 1px solid black;
 }
 
 .logo {
@@ -42,66 +43,94 @@ header a:link, a:visited {
   cursor: auto;
 }
 
+/* Body */
+
 .body {
   display: flex;
   width: 100%;
   justify-content: space-around;
-  border: 1px solid black;
+  margin: 20px;
+  padding-bottom: 50px;
 }
 
-.column.large {
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin-right: 32px;
+}
+
+.main-story {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-stories {
+  display: flex;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+}
+
+.large {
   width: 630px;
-  border: 1px solid black;
 }
 
-.column.medium {
+.medium {
   width: 300px;
-  border: 1px solid black;
 }
 
-.column.small {
+.small {
   width: 240px;
-  border: 1px solid black;
 }
 
 .image {
-  display: flex;
-  justify-content: center;
+  height: 300px;
+  width: 100%;
+  color: white;
 }
 
 .tuna {
   background-image: url("../../resources/images/img-story-main.png");
-  text-align: left;
 }
 
 .earth {
   background-image: url("../../resources/images/img-story-2.png");
+  text-align: center;
 }
 
 .camera {
   background-image: url("../../resources/images/img-story-3.png");
+  text-align: center;
+}
+
+.cat {
+  background-image: url("../../resources/images/img-story-1.png");
+  text-align: center;
 }
 
 /* Fonts */
 
+h1,
 h2,
 h3,
-p,
-img,
-.story {
-  border: 1px solid black;
+p {
+  font-family: Georgia;
+}
+
+h1 {
+  font-size: 40px;
 }
 
 p {
-  font-family: Georgia;
   font-size: 17px;
   color: black;
 }
 
-.image h2 {
-  font-family: Georgia;
-  font-weight: bold;
+h2 {
   font-size: 30px;
-  color: white;
-  height: 300px;
+  font-weight: bold;
 }
