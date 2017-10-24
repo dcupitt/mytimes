@@ -44,13 +44,16 @@ header a:link, a:visited {
 }
 
 /* Body */
+body {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
 
 .body {
   display: flex;
   width: 100%;
   justify-content: space-around;
-  margin: 20px;
-  padding-bottom: 50px;
 }
 
 .column {
@@ -58,6 +61,8 @@ header a:link, a:visited {
   flex-direction: column;
   flex-shrink: 0;
   margin-right: 32px;
+  margin: 20px;
+  padding-bottom: 50px;
 }
 
 .main-story {
@@ -104,6 +109,8 @@ header a:link, a:visited {
 }
 
 .image {
+  display: flex;
+  align-items: center;
   height: 300px;
   width: 100%;
   color: white;
@@ -128,6 +135,21 @@ header a:link, a:visited {
   text-align: center;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: MediumAquamarine;
+  width: 100%;
+  height: 300px;
+  margin: 0px;
+}
+
+.footer div {
+  padding: 10px;
+}
+
 /* Fonts */
 
 h1,
@@ -139,6 +161,7 @@ p {
 
 h1 {
   font-size: 40px;
+  padding-left: 20px;
 }
 
 
@@ -156,4 +179,17 @@ h4 {
 p {
   font-size: 17px;
   color: black;
+}
+
+.footer span {
+  font-family: Verdana;
+  font-size: 12px;
+  padding: 10px;
+}
+
+#company {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
 }
